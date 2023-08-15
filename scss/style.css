@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  position: absolute;
+}
+
+.header {
+  position: relative;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+}
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 70vw;
+  border: 1px solid red;
+}
+.header-container-cadastro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 350px;
+  list-style: none;
+  border: 1px solid white;
+}
+.header-container-cadastro li {
+  border: 1px solid white;
+  padding: 8px 32px;
+  font-weight: 600;
+  border-radius: 3px;
+}
+.header-container-cadastro li:nth-child(1) {
+  background-color: aqua;
+}/*# sourceMappingURL=style.css.map */

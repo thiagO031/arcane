@@ -1,4 +1,4 @@
-@import 'scss/layout/variables';
+// @import 'scss/layout/variables';
 
 *{
     padding: 0;
@@ -55,8 +55,69 @@ img{
                 font-weight: 600;
                 border-radius: 3px;
 
+                cursor: pointer;
+
+                &:nth-child(1){
+                    background-color: #0080C8;
+                    border: 0;
+                }
             }
         }
     }
 }
 
+.main{
+    position: relative;
+    width: 100vw;
+    height: 800px;
+
+    display: flex;
+    justify-content: center;
+
+    border: 1px solid white;
+
+    &-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 70vw;
+
+
+        border: 1px solid red;
+
+        h1{
+            font-size: 128px;
+        }
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            // height: 100%;
+            width: 500px;
+
+            list-style: none;
+
+            // border: 1px solid white;
+
+            li{
+                border: 1px solid white;
+                padding: 8px 32px;
+
+                font-weight: 600;
+                border-radius: 3px;
+
+                cursor: pointer;
+
+                &:nth-child(1){
+                    background-color: #0080C8;
+                    border: 0;
+                }
+            }
+        }
+
+    }
+}

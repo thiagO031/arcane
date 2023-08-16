@@ -1,3 +1,8 @@
+@use 'sass:color';
+
+// brand color escuro
+$color-scale: color.scale(#0080C8, $lightness: -30%);
+
 // COLOR SYSTEM
 $azul: #2962FF;
 $verde: #0BB07B;

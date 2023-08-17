@@ -4,19 +4,18 @@
   box-sizing: border-box;
   overflow-x: hidden;
   scrollbar-color: #0080C8 black;
-  color: #E7E7E7;
-  font-family: "Montserrat", sans-serif;
 }
 
 .body {
-  background-image: url(/./arcane/img/wallpaper.svg);
+  color: #E7E7E7;
+  font-family: "Montserrat", sans-serif;
 }
 .body-background {
-  width: 100%;
-  height: 100%;
+  position: absolute;
 }
 
 .header {
+  position: relative;
   width: 100vw;
   height: 120px;
   display: flex;
@@ -154,8 +153,11 @@
 
 @media screen and (max-width: 700px) {
   .body {
+    background-image: url(../img/wallpaper.svg);
     background-position: 50%;
-    background-blend-mode: darken;
+  }
+  .body-background {
+    display: none;
   }
   .header-container {
     width: 90vw;

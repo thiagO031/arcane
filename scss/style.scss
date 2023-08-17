@@ -8,27 +8,23 @@
     overflow-x: hidden;
 
     scrollbar-color: $brand-color black;  
-
-    color: $cinza-10;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .body{ 
-    // border: 2px solid green;
-
-    background-image: url(/./arcane/img/wallpaper.svg);
+    color: $cinza-10;
+    font-family: 'Montserrat', sans-serif;
+    // background: url(/arcane/img/wallpaper.svg);
 
     &-background{
-        width: 100%;
-        height: 100%;
-        // position: relative;
-        // height: 20px;
+        // width: 100vw;
+        // height: 100%;
+        position: absolute;
     }
 }
 
 
 .header{
-    // position: absolute;
+    position: relative;
     width: 100vw;
     height: 120px;
 
@@ -241,9 +237,16 @@
 @media screen and (max-width: 700px){
 
     .body{
-        // height: 500px;
+        background-image: url(../img/wallpaper.svg);
         background-position: 50%;
-        background-blend-mode: darken;
+        // width: 100vw;
+        &-background{
+            display: none;
+            // left: -180%;
+        }
+
+        
+        // background-blend-mode: darken;
         // border: 1px solid green;
     }
     

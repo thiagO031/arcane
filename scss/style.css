@@ -8,12 +8,16 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.body {
+  border: 2px solid green;
+  background-image: url(/./arcane/img/wallpaper.svg);
+}
 .body-background {
-  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .header {
-  position: relative;
   width: 100vw;
   height: 120px;
   display: flex;
@@ -151,6 +155,7 @@
 
 @media screen and (max-width: 700px) {
   .body {
+    background-position: 50%;
     border: 1px solid green;
   }
   .header-container-cadastro {
@@ -162,17 +167,17 @@
     justify-content: center;
   }
   .main-container {
-    height: 60%;
+    height: 50%;
     width: 90vw;
     border: 1px solid red;
   }
   .main-container h1 {
-    font-size: 80px;
+    font-size: 70px;
   }
   .main-container ul {
     flex-direction: column;
     height: 100px;
-    width: 70%;
+    width: 90%;
     border: 1px solid white;
   }
   .main-container ul li {

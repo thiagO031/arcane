@@ -14,15 +14,21 @@
 }
 
 .body{ 
+    border: 2px solid green;
+
+    background-image: url(/./arcane/img/wallpaper.svg);
+
     &-background{
-        position: absolute;
+        width: 100%;
+        height: 100%;
+        // position: relative;
         // height: 20px;
     }
 }
 
 
 .header{
-    position: relative;
+    // position: absolute;
     width: 100vw;
     height: 120px;
 
@@ -236,7 +242,7 @@
 
     .body{
         // height: 500px;
-
+        background-position: 50%;
         border: 1px solid green;
     }
     
@@ -258,20 +264,20 @@
         // border: 1px solid white;
     
         &-container{
-            height: 60%;
+            height: 50%;
             width: 90vw;
     
             border: 1px solid red;
     
             h1{
-                font-size: 80px;
+                font-size: 70px;
             }
     
             ul{
                 flex-direction: column;
                 
                 height: 100px;
-                width: 70%;
+                width: 90%;
     
                 border: 1px solid white;
     

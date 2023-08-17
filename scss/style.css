@@ -171,7 +171,6 @@
   .main-container {
     height: 40%;
     width: 90vw;
-    border: 1px solid red;
   }
   .main-container h1 {
     font-size: 70px;
@@ -180,7 +179,6 @@
     flex-direction: column;
     height: 100px;
     width: 90%;
-    border: 1px solid white;
   }
   .main-container ul li {
     width: 100%;

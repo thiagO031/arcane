@@ -232,9 +232,60 @@
 }
 
 
-// @media screen and (min-width: 700){
+@media screen and (max-width: 700px){
 
-//     .body{
-//         color: red;
-//     }
-// }
+    .body{
+        // height: 500px;
+
+        border: 1px solid green;
+    }
+    
+
+    .header{
+        &-container{
+            &-cadastro{
+                display: none;
+            }
+        }
+    }
+
+
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        // border: 1px solid white;
+    
+        &-container{
+            height: 60%;
+            width: 90vw;
+    
+            border: 1px solid red;
+    
+            h1{
+                font-size: 80px;
+            }
+    
+            ul{
+                flex-direction: column;
+                
+                height: 100px;
+                width: 70%;
+    
+                border: 1px solid white;
+    
+                li{
+                    width: 100%;
+
+                    text-align: center;
+                }
+            }
+    
+        }
+    }
+
+    .footer{
+        display: none;
+    }
+}

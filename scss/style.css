@@ -76,46 +76,47 @@
 }
 .main-container {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   height: 50%;
-  width: 30vw;
+  width: 100%;
 }
-.main-container h1 {
+.main-container-content h1 {
   font-size: 120px;
 }
-.main-container h1:nth-child(2) {
+.main-container-content h1:nth-child(2) {
   color: transparent;
-  -webkit-text-stroke-width: 1.5px; /* largura da borda */
-  -webkit-text-stroke-color: white; /* cor da borda */
+  -webkit-text-stroke-width: 1.5px;
+  /* largura da borda */
+  -webkit-text-stroke-color: white;
+  /* cor da borda */
 }
-.main-container ul {
+.main-container-content ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 100%;
   list-style: none;
 }
-.main-container ul li {
+.main-container-content ul li {
   border: 1px solid white;
   padding: 10px 32px;
   font-weight: 500;
   border-radius: 3px;
   cursor: pointer;
 }
-.main-container ul li:nth-child(1) {
+.main-container-content ul li:nth-child(1) {
   background-color: #0080C8;
   border: 0;
   transition: 0.5s;
 }
-.main-container ul li:nth-child(1):hover {
+.main-container-content ul li:nth-child(1):hover {
   background-color: #005a8c;
 }
-.main-container ul li:nth-child(2) {
+.main-container-content ul li:nth-child(2) {
   transition: 0.5s;
 }
-.main-container ul li:nth-child(2):hover {
+.main-container-content ul li:nth-child(2):hover {
   background-color: #0080C8;
   color: #E7E7E7;
   border: 1px solid #0080C8;
@@ -153,6 +154,7 @@
 
 @media screen and (max-width: 700px) {
   .body {
+    height: 100vh;
     background-image: url(../img/wallpaper.svg);
     background-position: 50%;
   }

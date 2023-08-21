@@ -20,17 +20,30 @@
   height: 120px;
   display: flex;
   justify-content: center;
+  border: 1px solid white;
 }
 .header-container {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 70vw;
+  border: 1px solid red;
 }
-.header-container-navbar-icon {
+.header-container-menu {
+  border: 2px 0 solid white;
   width: 40px;
+  height: 23px;
   cursor: pointer;
+}
+.header-container-menu::after, .header-container-menu::before {
+  content: " ";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: currentColor;
+  margin-top: 5px;
 }
 .header-container-cadastro {
   display: flex;

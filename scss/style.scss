@@ -13,7 +13,7 @@
 .body {
     color: $cinza-10;
     font-family: 'Montserrat', sans-serif;
-    // background: url(/arcane/img/wallpaper.svg);
+    background: url(/arcane/img/wallpaper.svg) no-repeat fixed center;
 
     &-background {
         // width: 100vw;
@@ -28,9 +28,9 @@
 
     position: relative;
 
-    height: 80px;
+    height: 100px;
 
-    border: 1px solid white;
+    // border: 1px solid white;
 
     &-container{
         display: flex;
@@ -42,7 +42,12 @@
         height: 100%;
         width: 70%;
 
-        border: 1px solid red;
+        // border: 1px solid red;
+
+        img{
+            cursor: pointer;
+            width: 30px;
+        }
 
         &-buttons{
             display: flex;

@@ -9,6 +9,7 @@
 .body {
   color: #E7E7E7;
   font-family: "Montserrat", sans-serif;
+  background: url(/arcane/img/wallpaper.svg) no-repeat fixed center;
 }
 .body-background {
   position: absolute;
@@ -18,8 +19,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  height: 80px;
-  border: 1px solid white;
+  height: 100px;
 }
 .header-container {
   display: flex;
@@ -28,7 +28,10 @@
   margin: 0 auto;
   height: 100%;
   width: 70%;
-  border: 1px solid red;
+}
+.header-container img {
+  cursor: pointer;
+  width: 30px;
 }
 .header-container-buttons {
   display: flex;
